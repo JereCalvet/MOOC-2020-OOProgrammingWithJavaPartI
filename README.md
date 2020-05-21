@@ -8,5 +8,5 @@ MOOC 2020 OOProgramming with JAVA
 
 https://java-programming.mooc.fi
 
-El código que realizó (la resolucion de los ejercicios) esta en la carpeta src (source)
+El código que realizó (la resolución de los ejercicios) esta en la carpeta src (source)
  
