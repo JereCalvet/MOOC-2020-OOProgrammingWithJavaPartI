@@ -1,7 +1,11 @@
 
 
 public class Division {
-
+    
+    public static void division(int numerator, int denominator) {
+        System.out.println(numerator / (denominator * 1.0));
+    }
+    
     public static void main(String[] args) {
         
         // Once you have implemented the division method, you can
