@@ -19,6 +19,28 @@ public class IndexOf {
 
         System.out.println("");
 
-        // implement here finding the indices of a number
+        System.out.print("Search for? ");
+        int desiredValue = Integer.valueOf(scanner.nextLine());
+        int amountRemoved = 0;
+        while (true) {
+            if (list.contains(desiredValue)) {
+                int desiredIndex = list.indexOf(desiredValue);
+                System.out.println(desiredValue + " is at index " + (desiredIndex + amountRemoved));
+                list.remove(desiredIndex);
+                amountRemoved++;
+            } else {
+                break;
+            }
+        }
+        
+        /*
+            jajaj podia hacer un fori, ya estoy quemado por hoy
+        
+            for (int i = 0; i < list.size(); i++) {
+                if (list.get(i) == desiredValue) {
+                    System.out.println(desiredValue + " is at index " + i);
+                }
+            }   
+        */
     }
 }
