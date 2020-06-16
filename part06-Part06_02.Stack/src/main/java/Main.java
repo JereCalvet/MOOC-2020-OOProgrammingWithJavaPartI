@@ -2,8 +2,14 @@
 public class Main {
 
     public static void main(String[] args) {
-
-        // Try out your class here
+        
+        Stack p = new Stack();
+        p.add("6a6ff2");
+        p.add("a37d94");
+        p.add("26e9f9");
+        System.out.println(p.take());
+        System.out.println(p.take());
+        System.out.println(p.take());
 
     }
 }
