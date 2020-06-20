@@ -33,6 +33,9 @@ public class UserInterface {
             }
 
             this.register.addGradeBasedOnPoints(points);
+            printGradeDistribution();
+            System.out.println("The averange of points: " + register.averageOfPoints());
+            System.out.println("The averange of grades: " + register.averageOfGrades());
         }
     }
 

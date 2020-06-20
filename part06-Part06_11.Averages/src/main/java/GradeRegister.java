@@ -1,16 +1,20 @@
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class GradeRegister {
 
     private ArrayList<Integer> grades;
+    private List<Integer> points;
 
     public GradeRegister() {
         this.grades = new ArrayList<>();
+        this.points = new ArrayList<>();
     }
 
     public void addGradeBasedOnPoints(int points) {
         this.grades.add(pointsToGrade(points));
+        this.points.add(points);
     }
 
     public int numberOfGrades(int grade) {
@@ -20,8 +24,15 @@ public class GradeRegister {
                 count++;
             }
         }
-
         return count;
+    }
+    
+    public double averageOfGrades() {
+        return grades.stream().mapToDouble(grades -> grades.doubleValue()).average().orElse(-1);
+    }
+    
+    public double averageOfPoints() {
+        return points.stream().mapToDouble(points -> points.doubleValue()).average().orElse(-1);
     }
 
     public static int pointsToGrade(int points) {
