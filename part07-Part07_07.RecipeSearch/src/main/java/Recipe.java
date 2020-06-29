@@ -33,4 +33,11 @@ public class Recipe {
     public void addIngredient(String ingredient) {
         ingredients.add(ingredient);
     }
+
+    @Override
+    public String toString() {
+        return name + ", cooking time: " + cookTime;
+    }
+    
+    
 }
